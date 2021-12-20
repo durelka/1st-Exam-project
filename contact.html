@@ -5,7 +5,7 @@
           <meta http-equiv="X-UA-Compatible" content="ie=edge">
           <meta name="viewport" content="width= device-width, initial-scale=1.0">
           <title>Portfolio</title>
-          <link rel="stylesheet" href="portfolio.css">
+          <link rel="stylesheet" href="journal.css">
           <style>
             @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
@@ -60,25 +60,87 @@
                 }
               </script>
 
+<style>
+  * {box-sizing: border-box;}
 
-                <section >
-                <section class="line">
-                <div class="linestext">
-                   <h1> Anastassija Ljahhovskaja</h1>
-              <h2>©</h2></div>
-            </section>
-          </section>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
-              <section>
-          <section class="line2">
-            <div class="linetext">
-                <h1>Dec'21</h1>
-             <img src="pot.jpg" alt="Clay pot" width="350"></div>
-            </section>
-          </section>
-          
- <!--Positioning footer-->
-  <footer>
+input[type=submit] {
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: var(--maincolor);
+  padding: 20px;
+  
+}
+h3{
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3.2rem;
+  font-family: var(--headingfont);
+  color: #fff;
+}
+h2{
+  font-size: 3.2rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#fff;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Me</h3>
+<h2>04</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="denmark">Denmark</option>
+      <option value="estonia">Estonia</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<!--Positioning footer-->
+<footer>
   <section id="copyrights">
     <p>Copyright © 2021 Anastassija Ljahhovskaja. All rights reserved.</p>
     </section>

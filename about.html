@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <meta name="viewport" content="width= device-width, initial-scale=1.0">
+          <title>Portfolio</title>
+          <link rel="stylesheet" href="about.css">
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+            </style>
+        </head>
+            <body>
+              <nav class="navbar">
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#CCBBBB" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#CCBBBB" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#CCBBBB" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+            
+                <ul class="navbar-nav">
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="portfolio.html">HOME</a></li>
+                  </ul>
+                </nav>
+              
+                <div id="side-menu" class="side-nav">
+                  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                  <a href="portfolio.html">HOME</a>
+                  <a href="about.html">ABOUT ME</a>
+                  <a href="journal.html">JOURNAL</a>
+                  <a href="contact.html">CONTACT</a>
+              
+                <form>
+                  <section class="searchbar">
+                  <input type="text" id="form1"  size="12" margin="20px" placeholder="Search...">
+                  <button><img width="12px" left="5px"src="search.png"></button>
+                </form>
+                 </section>
+              </div>
+            
+              
+            
+              <script>
+                function openSlideMenu(){
+                  document.getElementById('side-menu').style.width = '250px';
+                  document.getElementById('main').style.marginLeft = '250px';
+                }
+            
+                function closeSlideMenu(){
+                  document.getElementById('side-menu').style.width = '0';
+                  document.getElementById('main').style.marginLeft = '0';
+                }
+              </script>
+
+            <section >
+           <section class="line">
+           <div class="linestext">
+          <h1> About me</h1>
+          <h2>01</h2></div>
+        </section>
+        </section>
+        <section>
+            <section class="line2">
+              <div class="linetext">
+               <img src="me.jpg" alt="myself" width="250"></div>
+              </section>
+            </section>
+            <section>
+                <section class="line3">
+                    <div class="article">
+                        <p>Anastassija Ljahhovskaja (B. 2002 in Tallinn, Estonia). Graduated from Art School of Old Town, Tallinn in 2019 and lives in Copenhagen, Denmark.</p> </div>
+                </section>
+            </section>
+            <section class="skills">
+            <div class="skills">
+               <h1>Experience</h1>
+               <ul class="skills">
+                <li>Pottery</li>
+                <li>Multimedia Design (Beginner)</li>
+                <li>Cross and Transmedia</li>
+              </ul></div>
+        </section>
+
+        <section class="career">
+            <div class="career">
+                <h1>My Career So Far</h1>
+                <p>It is always difficult to start something new, despite this I am slowly ,but surely developing a "business" with clay pots through Instagram, which I personally produce in Estonia. 
+                   <a href="journal.html"> Learn more about it here. </a>
+                <br>
+                    After finishing art school and graduating from high school, I decided to move to Denmark, where, at the moment, I am studying in Zealand (Køge, Denmark) in the direction of Multimedia design and earning a bachelor's degree.
+                    However, I have not yet had time to try myself in the role of a multimedia designer outside the university or as a cross / transmedia specialist after completing the courses in the Tallinn University (Tallinn, Estonia).  
+                    <br>
+                    Want to be the first to rate my skills in these areas?  Then hurry up to <a href="contact.html">contact</a> me!</p></div>
+        </section>
+
+        <!--Positioning footer-->
+<footer>
+  <section id="copyrights">
+    <p>Copyright © 2021 Anastassija Ljahhovskaja. All rights reserved.</p>
+    </section>
+  </footer>
+</body>
+</html>

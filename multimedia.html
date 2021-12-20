@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <meta name="viewport" content="width= device-width, initial-scale=1.0">
+          <title>Portfolio</title>
+          <link rel="stylesheet" href="multimedia.css">
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+            </style>
+        </head>
+            <body>
+              <nav class="navbar">
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#CCBBBB" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#CCBBBB" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#CCBBBB" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+            
+                <ul class="navbar-nav">
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <li><a href="journal.html">JOURNAL</a></li>
+                  <li><a href="about.html">ABOUT ME</a></li>
+                  <li><a href="portfolio.html">HOME</a></li>
+                </ul>
+              </nav>
+            
+              <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="portfolio.html">HOME</a>
+                <a href="about.html">ABOUT ME</a>
+                <a href="journal.html">JOURNAL</a>
+                <a href="contact.html">CONTACT</a>
+            
+                <form>
+                  <section class="searchbar">
+                  <input type="text" id="form1"  size="12" margin="20px" placeholder="Search...">
+                  <button><img width="12px" left="5px"src="search.png"></button>
+                </form>
+                 </section>
+              </div>
+            
+              
+            
+              <script>
+                function openSlideMenu(){
+                  document.getElementById('side-menu').style.width = '250px';
+                  document.getElementById('main').style.marginLeft = '250px';
+                }
+            
+                function closeSlideMenu(){
+                  document.getElementById('side-menu').style.width = '0';
+                  document.getElementById('main').style.marginLeft = '0';
+                }
+              </script>
+
+
+<section class="back">
+    <div class="beginning">
+        <img src="multi.jpeg" width="390">
+        <h1>Multimedia
+            <br>
+            Design</h1>
+    </div>
+</section>
+
+<section>
+<section class="multimedia">
+    <div class="multimedia">
+        <h2>03</h2>
+    </div>
+</section>
+</section>
+
+
+
+<!--/* Creating slide-show*/-->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="video.jpg" style="width: 390px;">
+    <div class="text">Video project</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="entrepreneur.jpeg" style="width:390px">
+  <div class="text">Entrepreneur competition</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="dance.jpeg" style="width:390px">
+  <div class="text">Ballet studio</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<style>
+  * {
+      box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+</style>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Video project</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Entrepreneur competition</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Ballet studio</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <a href="journal.html" class="btn" role="button">Back</a>
+</div>
+
+
+<!--Positioning footer-->
+<footer>
+  <section id="copyrights">
+    <p>Copyright © 2021 Anastassija Ljahhovskaja. All rights reserved.</p>
+    </section>
+  </footer>
+</body>
+</html>

@@ -1,4 +1,244 @@
-@import url(https://freefontsfamily.com/engravers-gothic-bt-font-free/);
-h3{
- font-family: 'EngraversGothic BT';
+
+:root{
+  --maincolor:#CCBBBB;
+  --secondary:#5F5454;
+  --blackieblack:black;
+  --headingfont:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --basicfont:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+  margin: 0;
+}
+body{
+  font-family:var(--basicfont);
+  background-color:var(--maincolor);
+  overflow-x:hidden;
+  padding: 0px;
+  color: var(--blackieblack);
+}
+h1{
+  font-family: var(--headingfont);
+  font-size: 150%;
+}
+.searchbar{
+  position: relative;
+  left:30px;
+}
+.navbar{
+  background-color:#fff;
+  overflow:hidden;
+  height:63px;
+}
+
+.navbar-nav {
+  display: none;
+}
+
+.navbar a{
+  float: right;
+  display:block;
+  color:var(--blackieblack);
+  text-align: center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+
+.navbar a:hover{
+  background-color:var(--maincolor);
+  color:#000;
+}
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  right:0;
+  background-color:#CCBBBB;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:black;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+.grid-container{
+  padding: 10px;
+  border: 100px;
+  display:flex;
+  justify-content: space-evenly;
+}
+.grid-container > section {
+  text-align: center;
+  padding: 20px ;
+}
+.grid-container2{
+  display: grid;
+  padding:10px;
+  float: left;
+  align-items: stretch;
+}
+.grid-container2 > section {
+  padding: 5px ;
+}
+.item1{
+  grid-column-start: 1;
+  grid-column-end:2;
+  grid-row:1;
+ 
+}
+.item2{
+  grid-column-start: 3;
+  grid-column-end:4;
+  grid-row:2;
+  
+}
+.item3{
+  grid-column-start: 3;
+  grid-column-end:5 ;
+  grid-row:3;
+}
+.button{
+  border:0;
+  background-color: var(--maincolor);
+  border-radius: 16px;
+  padding:16px;
+  text-align: center;
+}
+  
+.linestext h1{
+    font-size: 3.2rem;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+.linestext h2{
+    font-size: 3.2rem;
+    margin-left: 1rem;
+}
+.linetext h1{
+    font-size: 3.2rem;
+    text-align: right;
+    margin-bottom: 0;
+}
+.linetext{
+    margin-top: 5rem;
+}
+
+ /* footer positioning */
+footer{
+    text-align: center;
+    position: relative;
+}
+#copyrights p{
+    background-color: #FFFF;
+    padding: 1rem 0rem;
+    margin-top: 7rem;
+}
+
+
+@media screen and (min-width: 390px) {
+  .navbar-nav {
+    display: none;
+  }
+  .linestext h1{
+    font-size: 3.625rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.linestext h2{
+    font-size: 3.625rem;
+    margin-left: 2rem;
+}
+.linetext h1{
+    font-size: 3.625rem;
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+.linetext img{
+   width: 100%;
+}
+.linetext{
+    margin-top: 10rem;
+}
+}
+
+@media only screen and (min-width: 568px) {
+  .navbar-nav {
+    display: initial;
+  }
+ .linestext h1{
+    font-size: 6.125rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.linestext h2{
+    font-size: 6.125rem;
+    margin-left: 2rem;
+}
+.linetext h1{
+    font-size: 6.125rem;
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 2rem;
+}
+.linetext img{
+   width: 100%;
+}
+.linetext{
+    margin-top: 10rem;
+}
+}
+
+@media screen and (min-width: 1046px) {
+  .navbar-nav {
+    display: initial;
+  }
+ .linestext h1{
+    font-size: 5.125rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.linestext h2{
+    font-size: 5.125rem;
+    margin-left: 2rem;
+}
+.linetext h1{
+    font-size: 5.125rem;
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 2rem;
+}
+.linetext img{
+   width: 100%;
+}
+.linetext{
+    margin-top: 10rem;
+}
 }

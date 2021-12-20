@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <meta name="viewport" content="width= device-width, initial-scale=1.0">
+          <title>Portfolio</title>
+          <link rel="stylesheet" href="journal.css">
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+            </style>
+        </head>
+            <body>
+
+
+              <nav class="navbar">
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#CCBBBB" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#CCBBBB" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#CCBBBB" stroke-width="5"/>
+                    </svg>
+                  </a>
+                </span>
+            
+                  <ul class="navbar-nav">
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="journal.html">JOURNAL</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="portfolio.html">HOME</a></li>
+                  </ul>
+                </nav>
+              
+                <div id="side-menu" class="side-nav">
+                  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                  <a href="portfolio.html">HOME</a>
+                  <a href="about.html">ABOUT ME</a>
+                  <a href="journal.html">JOURNAL</a>
+                  <a href="contact.html">CONTACT</a>
+            
+                <form>
+                  <section class="searchbar">
+                  <input type="text" id="form1"  size="12" margin="20px" placeholder="Search...">
+                  <button><img width="12px" left="5px"src="search.png"></button>
+                </form>
+                 </section>
+              </div>
+            
+              
+            
+              <script>
+                function openSlideMenu(){
+                  document.getElementById('side-menu').style.width = '250px';
+                  document.getElementById('main').style.marginLeft = '250px';
+                }
+            
+                function closeSlideMenu(){
+                  document.getElementById('side-menu').style.width = '0';
+                  document.getElementById('main').style.marginLeft = '0';
+                }
+              </script>
+
+
+<section class="back">
+    <div class="beginning">
+        <img src="mix.jpg" width="390">
+        <h1>Products
+            <br>
+            & Materials</h1>
+    </div>
+</section>
+
+<section>
+<section class="pottery">
+    <div class="pottery">
+        <h1> Pottery</h1> 
+        <h2>02</h2>
+    </div>
+</section>
+</section>
+
+<section class="introdaction">
+    <div class="introtext">
+        <p>Welcome to Stacy’s Ceramics! 
+            <br>
+            I hope that my ceramic creatures will bring you a breath of fresh air and happiness!</p>
+    </div>
+</section>
+<section class="intro">
+<div class="overlook">
+            <p>Here you can see my works ,that I have done over the past few months.  
+                There are not so many of them, because I have just started development in this area, but I can say ,that I am pretty good at it and I really like it! 
+                 These clay pots are suitable for transplantation (see an example below, they seem to have "hair").  
+                Great storage space for cutlery, brushes and more, there are absolutely no restrictions so your imagination can play out!</p>
+    </div>
+</section>
+
+<section class="pic">
+    <div class="pic">
+        <img src="pot1.jpg" width="300">
+    </div>
+</section>
+
+<section class="picdescr">
+    <div class="descr">
+      <h1>Description</h1>
+    <p>Simone - utensil holder, spoon holder, indie room decor.
+          <br>
+          <br>
+            Hand sculptured head pot with a unique and ethnic design. They will make your living and business space more interesting and beautiful, and you will be connected to nature again.
+          <br>
+          <br>
+            Each item is handmade, this is what makes every pot unique and one-of-a-kind. This planter is made from clay and glaze. 
+            They also do not have a drainage hole and are great for indoor use or can be used as a multipurpose bowl!</p>
+    </div>
+</section>
+
+<section class="pic2">
+    <div class="pic2">
+        <img src="pic2.jpg" width="350px">
+    </div>
+</section>
+
+<style>
+  * {
+      box-sizing: border-box;
+  }
+  
+  /* Creating two equal columns that floats next to each other */
+  .column {
+      float: left;
+      padding-left: 1.3rem;
+      height: 250px; 
+      color: #fff;
+      padding-right: 1.3rem;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .column h2{
+    padding-bottom: 1rem;
+  }
+  .column img{
+    border-radius: 50%;
+    margin-left: 15rem;
+  }
+  .column p{
+    padding-bottom: 1rem;
+  }
+  </style>
+  
+  <div class="row">
+    <div class="column">
+      <h2>Clay :</h2>
+      <p>I'm using white clay, because it is characterized by elasticity and translucency due to the absence of iron oxide in its composition.  Fired at a temperature of 1100 ° C. After firing it becomes whitish or ivory.</p>
+      <img src="clay.jpg" alt="clay" style="width: 80px;" height="80px">
+    </div>
+    <div class="column" >
+      <h2>Glaze :</h2>
+      <p>Covered with two layers of transparent glaze.</p>
+      <img src="glaze.jpg" alt="glaze" style="width: 80px;" height="80px">
+    </div>
+  </div>
+
+
+<section class="measure">
+  <div class="measure">
+     <h1>Measurements</h1>
+     <ul class="list">
+      <li>Width : 11cm</li>
+      <li>Height : 11cm</li>
+      <li>Depth : 10.5cm</li>
+    </ul></div>
+</section>
+
+<!--/* Creating slide-show*/-->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="catlery.jpg" style="width: 390px;">
+    <div class="text">Cutlery Pot</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="threeeye.jpg" style="width:390px">
+  <div class="text">Three Eye Pot</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="noglaze.jpg" style="width:390px">
+  <div class="text">Pot Without Glaze</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+
+<script>
+ var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000); 
+}
+</script>
+
+  <div class="container">
+    <a href="multimedia.html" class="btn" role="button">Next</a>
+</div>
+
+<!--Positioning footer-->
+<footer>
+  <section id="copyrights">
+    <p>Copyright © 2021 Anastassija Ljahhovskaja. All rights reserved.</p>
+    </section>
+  </footer>
+</body>
+</html>

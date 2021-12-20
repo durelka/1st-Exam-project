@@ -1,0 +1,413 @@
+:root{
+    --maincolor:#CCBBBB;
+    --secondary:#5F5454;
+    --blackieblack:black;
+    --headingfont: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --basicfont:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  *{
+    margin: 0;
+  }
+  body{
+    font-family:var(--basicfont);
+    background-color:var(--secondary);
+    overflow-x:hidden;
+    padding: 0px;
+    color: var(--blackieblack);
+  }
+  h1{
+    font-family: var(--headingfont);
+    font-size: 150%;
+  }
+  .searchbar{
+    position: relative;
+    left:30px;
+  }
+  .navbar{
+    background-color:#fff;
+    overflow:hidden;
+    height:63px;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  .navbar a{
+    float:right;
+    display:block;
+    color:var(--blackieblack);
+    text-align: center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+  }
+  
+  .navbar ul{
+    margin:8px 0 0 0;
+    list-style:none;
+  }
+  
+  .navbar a:hover{
+    background-color:var(--secondary);
+    color:#000;
+  }
+  
+  .side-nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    right:0;
+    background-color:#5F5454;;
+    opacity:0.9;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+  }
+  
+  .side-nav a{
+    padding:10px 10px 10px 30px;
+    text-decoration:none;
+    font-size:22px;
+    color:#fff;
+    display:block;
+    transition:0.3s;
+  }
+  
+  .side-nav a:hover{
+    color:#fff;
+  }
+  
+  .side-nav .btn-close{
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size:36px;
+    margin-left:50px;
+  }
+  .grid-container{
+    padding: 10px;
+    border: 100px;
+    display:flex;
+    justify-content: space-evenly;
+  }
+  .grid-container > section {
+    text-align: center;
+    padding: 20px ;
+  }
+  .grid-container2{
+    display: grid;
+    padding:10px;
+    float: left;
+    align-items: stretch;
+  }
+  .grid-container2 > section {
+    padding: 5px ;
+  }
+  .item1{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row:1;
+   
+  }
+  .item2{
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row:2;
+    
+  }
+  .item3{
+    grid-column-start: 3;
+    grid-column-end:5 ;
+    grid-row:3;
+  }
+  .button{
+    border:0;
+    background-color: var(--secondary);
+    border-radius: 16px;
+    padding:16px;
+    text-align: center;
+  }
+  footer{
+    text-align: center;
+    position: relative;
+}
+#copyrights p{
+    background-color: #FFFF;
+    padding: 1rem 0rem;
+    margin-top: 7rem;
+}
+
+
+  .linestext h1{
+    font-size: 3.2rem;
+    margin-top: 5rem;
+   text-align: center;
+   color: #fff;
+}
+.linestext h2{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#fff;
+}
+.linetext img{
+    margin-left: 4.3rem;
+    margin-top: 4rem;
+}
+.article p{
+    font-family: var(--basicfont);
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #fff;
+}
+.skills h1{
+    text-align: center;
+    color: #5F5454;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+.skills li{
+    text-align: left;
+    color: #5F5454;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+}
+.skills{
+    background-color: #fff;
+    margin-left: 2rem;
+    margin-right: 2em;
+}
+.career a{
+  color: #fff;
+}
+
+@media screen and (min-width: 390px) {
+  .navbar-nav {
+    display: initial;
+  }
+  .linetext img{
+    text-align: center;
+  }
+  .linestext h1{
+    font-size: 3.2rem;
+    margin-top: 5rem;
+   text-align: center;
+   color: #fff;
+}
+.linestext h2{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#fff;
+}
+.article p{
+    font-family: var(--basicfont);
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #fff;
+}
+.skills h1{
+    text-align: center;
+    color: #5F5454;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+.skills li{
+    text-align: left;
+    color: #5F5454;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+}
+.skills{
+    background-color: #fff;
+    margin-left: 2rem;
+    margin-right: 2em;
+}
+.career h1{
+  text-align: center;
+  color: #fff;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+.career p{
+  font-family: var(--basicfont);
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: #fff;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 568px) {
+    .navbar-nav {
+      display: initial;
+    }
+    .linetext img{
+      text-align: center;
+      width: 80%;
+      margin-left: 4rem;
+    }
+  .career h1{
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .career p{
+    font-family: var(--basicfont);
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #fff;
+  }
+  .linetext img{
+    text-align: center;
+    width: 80%;
+    margin-left: 3.5rem;
+  }
+  .linestext h1{
+    font-size: 3.2rem;
+    margin-top: 5rem;
+   text-align: center;
+   color: #fff;
+}
+.linestext h2{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#fff;
+}
+.article p{
+    font-family: var(--basicfont);
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #fff;
+}
+.skills h1{
+    text-align: center;
+    color: #5F5454;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+.skills li{
+    text-align: left;
+    color: #5F5454;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+}
+.skills{
+    background-color: #fff;
+    margin-left: 2rem;
+    margin-right: 2em;
+}
+}
+
+
+
+
+
+
+  @media screen and (min-width: 1046px) {
+    .navbar-nav {
+      display: initial;
+    }
+    .linetext img{
+      text-align: center;
+      margin-left: 6.5rem;
+    }
+     .career h1{
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .career p{
+    font-family: var(--basicfont);
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #fff;
+  }
+  .linestext h1{
+    font-size: 3.2rem;
+    margin-top: 5rem;
+   text-align: center;
+   color: #fff;
+}
+.linestext h2{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#fff;
+}
+.article p{
+    font-family: var(--basicfont);
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #fff;
+}
+.skills h1{
+    text-align: center;
+    color: #5F5454;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+.skills li{
+    text-align: left;
+    color: #5F5454;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+}
+.skills{
+    background-color: #fff;
+    margin-left: 2rem;
+    margin-right: 2em;
+}
+}
