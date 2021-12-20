@@ -144,11 +144,14 @@ function showSlides(n) {
   /* Create three equal columns that floats next to each other */
   .column {
       float: left;
-      width: 33.33%;
+      width: 70%;
       padding: 10px;
-      height: 300px; /* Should be removed. Only for demonstration */
+      height: 200px; 
+      margin-top: 2rem;
   }
-  
+  .column p{
+    margin-top: 1rem;
+  }
   /* Clear floats after the columns */
   .row:after {
       content: "";
@@ -158,17 +161,17 @@ function showSlides(n) {
 </style>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
+  <div class="column" style="background-color:var(--maincolor)">
     <h2>Video project</h2>
-    <p>Some text..</p>
+    <p>In this project, my role was the formation of ideas, the formation of communication in a team.  It was very interesting to watch the shooting and correct the nuances.</p>
   </div>
-  <div class="column" style="background-color:#bbb;">
+  <div class="column" style="background-color:var(--maincolor)">
     <h2>Entrepreneur competition</h2>
-    <p>Some text..</p>
+    <p>In this project, my role was to create the "about us" page.  I tried to make it not overloaded, minimalistic and neat.  I was also involved in creating content for the entire website, as well as generating an idea, which we then developed together.</p>
   </div>
-  <div class="column" style="background-color:#ccc;">
+  <div class="column" style="background-color:var(--maincolor)">
     <h2>Ballet studio</h2>
-    <p>Some text..</p>
+    <p>My role was to create the events page.  Since at that moment my programming skills were not so strong, I could not do as I wanted, but tried to keep the tenderness of ballet, a little text and all the necessary information.</p>
   </div>
 </div>
 
